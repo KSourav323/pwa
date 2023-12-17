@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" sizes="192x192" href="{{ url_for('static', filename='images/64logo.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+    <title>CRUDpwa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <h1>CRUD</h1>
+            <img src="static/images/stud.png" alt="" srcset="">
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+        <div id="left">
+            <div>
+                <h1>Student Data</h1>
+                <ul>
+                    {% for student in students %}
+                        <li>
+                            <div class="datas">
+                                {{ student.to_dict().Name }} | {{ student.to_dict().Mail }} | {{ student.to_dict().GPA }} gpa
+                            </div>
+                            
+                            <div class="buttons">
+                                <a href="/delete/{{ student.id }}"><button>Delete</button></a>
+                                <a href="/update/{{ student.id }}"><button>Update</button></a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+        </div>
+        <div id="right">
+            <div>
+                <h1>Add new</h1>
+                <form action="/add" method="post">
+                    <input type="text" name="name" placeholder="Name" required><br>
+                    <input type="email" name="mail" placeholder="Email" required><br>
+                    <input type="number" step="0.01" name="gpa" placeholder="GPA" required><br>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+        
+
+</body>
+</html>

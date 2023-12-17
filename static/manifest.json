@@ -1,0 +1,22 @@
+{
+    "name": "CRUDpwa",
+    "short_name": "pwa",
+    "theme_color": "#34A5DA",
+    "background_color": "#FFFFFF",
+    "icons": [
+        {
+          "src": "/static/images/64logo.png",
+          "type": "image/png",
+          "sizes": "64x64"
+        },
+        {
+          "src": "/static/images/512logo.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+        
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}

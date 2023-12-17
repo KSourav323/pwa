@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" sizes="192x192" href="{{ url_for('static', filename='images/64logo.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+    <title>CRUDpwa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+
+    <header>
+
+        <nav class="nav">
+            <h1>CRUD</h1>
+            <img src="static/images/stud.png" alt="" srcset="">
+        </nav>
+
+    </header>
+    <br>
+    <div class="c">
+        <div class="dat">
+            {{ student.Name }} | {{ student.Mail }} | {{ student.GPA }} gpa
+        </div>
+        <br>
+        <form action="/update/{{ studid }}" method="post">
+            <input type="text" name="name" placeholder="New Name">
+            <input type="email" name="mail" placeholder="New Email">
+            <input type="number" step="0.01" name="gpa" placeholder="New GPA">
+            <button type="submit">Update</button>
+        </form>
+            
+    </div>
+
+</body>
+</html>
