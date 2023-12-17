@@ -6,6 +6,7 @@
     <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
     <title>CRUDpwa</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -19,7 +20,7 @@
     <br>
     <div class="container">
         <div id="left">
-            <div>
+            <div >
                 <h1>Student Data</h1>
                 <ul>
                     {% for student in students %}

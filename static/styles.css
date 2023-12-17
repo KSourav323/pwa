@@ -10,10 +10,8 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -22,14 +20,12 @@ body {
 /* Left section styles */
 #left {
     flex: 1;
-    min-width: 300px;
     margin-right: 20px;
 }
 
 /* Right section styles */
 #right {
     flex: 1;
-    min-width: 300px;
 }
 
 /* Styles for Student Data */
@@ -94,7 +90,21 @@ button {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #left,
+    #right {
+        min-width: 300px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .container {
         flex-direction: column;
         align-items: center;
@@ -102,6 +112,8 @@ button {
 
     #left,
     #right {
+        zoom: 170%;
+        min-width: 500px;
         width: 100%;
         margin: 0;
     }
