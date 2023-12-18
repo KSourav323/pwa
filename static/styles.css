@@ -102,6 +102,10 @@ button {
         width: 100%;
         margin: 0;
     }
+
+    .c{
+        zoom: 280%
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -121,6 +125,10 @@ button {
     .datas{
         font-size: 0.55cm;
     }
+
+    .c{
+        zoom: 280%
+    }
     
 }
 
@@ -129,7 +137,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 90%;
     margin: 0 auto;
 }
 
