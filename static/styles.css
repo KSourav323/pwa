@@ -40,12 +40,7 @@ li {
     margin-bottom: 10px;
 }
 
-a {
-    text-decoration: none;
-    margin-left: 10px;
-    background-color: purple;
-    color: #fff;
-}
+
 
 /* Header and Nav styles */
 header {
@@ -83,6 +78,15 @@ button {
     border: 1px solid #ccc;
 }
 
+
+
+a {
+    text-decoration: none;
+    margin-left: 10px;
+    background-color: purple;
+    color: #fff;
+}
+
 button {
     background-color: purple;
     color: white;
@@ -106,6 +110,8 @@ button {
     .c{
         zoom: 280%
     }
+
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -129,7 +135,13 @@ button {
     .c{
         zoom: 280%
     }
-    
+
+    button {
+        background-color: purple;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 }
 
 .c{
