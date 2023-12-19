@@ -90,7 +90,7 @@ a {
 button {
     background-color: purple;
     color: white;
-    border: none;
+    border: #fff;
     cursor: pointer;
 }
 
@@ -98,6 +98,10 @@ button {
     .container {
         flex-direction: row;
         align-items: center;
+    }
+
+    .datas{
+        zoom: 150%;
     }
 
     #left,
@@ -122,14 +126,14 @@ button {
 
     #left,
     #right {
-        zoom: 170%;
+        zoom: 190%;
         min-width: 500px;
         width: 100%;
         margin: 0;
     }
 
     .datas{
-        font-size: 0.55cm;
+        font-size: 0.42cm;
     }
 
     .c{
@@ -142,6 +146,7 @@ button {
         border: none;
         cursor: pointer;
     }
+
 }
 
 .c{
